@@ -128,14 +128,56 @@ console.log(dgfeedery(weight,doga));
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 
-const humanp= "Claudio";
+
 const choice="paper";
+const rock="rock";
+const paper="paper";
+const sissors="sissors";
+let pcchoice=Math.ceil(Math.random() * 3);
 
-function game(choice,humanp){
-    
-    
+  function result(){
+    if(pcchoice == 1){
+            return rock;
+        }
+        else if(pcchoice == 2){
+            return paper;
+        }
+        else if(pcchoice == 3){
+            return sissors;
+        }
+    };
 
-}
+
+     function pick (result,choice){
+        if( result==rock && choice==paper){
+            return "You Won";
+        }
+        else if(result==paper && choice==rock){
+            return "You Lose";
+        }
+        else if(result==rock && choice==sissors){
+            return "You Lose";
+        }
+        else if(result==paper && choice==sissors){
+            return "You Won";
+        }
+        else if(result==sissors && choice==paper){
+            return "You Lose";
+        }
+        else if(result==paper && choice==paper){
+            return "TIE";
+        }
+        else if(result==rock && choice==rock){
+            return "TIE";
+        }
+        else if(result==sissors && choice==sissors){
+            return "TIE";
+        }
+    };
+    console.log(result());
+    console.log(pick());
+
+
 
 
 
