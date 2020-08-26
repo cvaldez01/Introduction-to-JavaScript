@@ -174,12 +174,8 @@ let pcchoice=Math.ceil(Math.random() * 3);
             return "TIE";
         }
     };
-    console.log(result());
-    console.log(pick());
-
-
-
-
+   
+    console.log(pick(result(),choice));
 
 
 
@@ -195,15 +191,24 @@ let pcchoice=Math.ceil(Math.random() * 3);
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
+const km =5;
 
+function converter(km){
+    return km * 0.621372;
+}
+
+console.log(converter(km));
 
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+  const feet =5;
 
-
+function conver(feet){
+    return feet * 0.32808;
+}
+console.log(conver(feet));
 
 
 /************************************************************** Task 6 **************************************************************/
