@@ -1,35 +1,58 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
+let votionAge=19;
+
+if(votionAge >=18 ){
+    console.log("you can vote")
+}else{
+    console.log("you cannot vote")
+}
 
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+let age = 11;
 
+if(age < 10){
+    age="boys"
+}else{
+    age="teenagers"
+}
+console.log(age);
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
+let number="1999";
+let convertnumber=parseInt(number);
+console.log(convertnumber);
 
 
 
 //Task d: Write a function to multiply a*b 
+function multiply (a,b){
+    return a * b;
+}
 
-
-
+console.log(multiply(10,4));
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+let age2 = 25;
+let dogy=7;
+function dogyears(age2,dogy){
 
+    return age2 * dogy;
+}
 
-
+console.log(dogyears(age2,dogy));
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
@@ -49,6 +72,50 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+const weight= 15;
+const doga=12;
+
+
+function dgfeederw(weight){
+    if (weight <= 5){
+        let raw= weight * 0.05;
+        return Math.ceil(raw);
+    }else if(weight >= 6 && weight <= 10){
+            raw= weight * 0.04;
+            return raw;
+        
+    }else if(weight >= 11 && weight < 15){
+        raw= weight * 0.03;
+        return raw;
+    }else if(weight >= 15){
+        raw= weight * 0.02;
+        return raw;
+}
+}
+
+function dgfeedery(weight,doga){
+    if(doga >= 2 && doga <= 4){
+        let rfood= weight * 0.1;
+        return rfood; 
+    }else if(doga >= 4 && doga < 7 ){
+        rfood= weight * 0.05;
+        return rfood; 
+
+    }else if(doga >= 7 && doga < 12){
+        rfood= weight * 0.04;
+        return rfood; 
+
+    }else if(doga == 12){
+        rfood =weight * 0.03;
+        return rfood;
+    }
+
+
+}
+//console.log(dgfeederw(weight));
+console.log(dgfeedery(weight,doga));
+
+
 
 
 
@@ -59,6 +126,26 @@
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+
+
+const humanp= "Claudio";
+const choice="paper";
+
+function game(choice,humanp){
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
 
   
   
